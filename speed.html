@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Speed conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="eproject.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- place navbar here -->
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="light">
+            <div class="container-fluid" style="cursor: pointer;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12,7 L12,21"></path>
+                    <path d="M8,21 L16,21"></path>
+                    <path d="M3,7 L21,7"></path>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="12" r="3"></circle>
+                    <line x1="6" y1="7" x2="6" y2="9"></line>
+                    <line x1="18" y1="7" x2="18" y2="9"></line>
+                    <line x1="5" y1="12" x2="7" y2="12"></line>
+                    <line x1="6" y1="11" x2="6" y2="13"></line>
+
+                </svg>
+                <span class="logo-span"> <a href="eprojrct.html"
+                        style="text-decoration: none;color: black;">MetricConversions</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- main heading div  -->
+        <div class="px-4 my-5 text-center ">
+            <h2 class="display-6 fw-bold text-body-emphasis">Speed Converter Tools – Convert mph, km/h (kmph), m/s,
+                knots & ft/s
+            </h2>
+            <p class="lead">Welcome to the speed conversion hub-your one place to convert between mph, km/h (kmph), m/s,
+                knots, and ft/s. Every calculator uses exact SI and international definitions with instant results and a
+                consistent, mobile-first interface.
+                <br>
+                Whether you’re analyzing telematics, flight logs, marine navigation, sports timing, or road signage,
+                unit consistency is critical. Our tools centralize precise constants, perform calculations at full
+                precision, and recommend rounding once on output so your PDFs, dashboards, emails, and CSV exports stay
+                in agreement.
+            </p>
+        </div>
+        <!-- calculater  -->
+        <section class="calculater-container ">
+            <div class="control-calculater">
+
+                <input id="S1" type="number" placeholder="Enter the value ">
+                <div id="message"></div>
+
+                <select id="Stype">
+                    <option value="in-mm">Inches → Millimeters</option>
+                    <option value="ft-m">Feet → Meters</option>
+                    <option value="yd-m">Yards → Meters</option>
+                    <option value="mi-km">Miles → Kilometers</option>
+                </select>
+
+                <button onclick="convertspeed()" class="btn btn-outline-primary">Convert</button>
+
+                <input id="Sresult" type="text" placeholder="Result" readonly>
+            </div>
+        </section>
+        <!-- Temperature – History of Measurement Units -->
+        <div class="p-4 p-md-5 mb-4 rounded  cursor-auto  ">
+            <h1 class="  ">Speed – History of Measurement Units</h1>
+            <p class="lead  ">Speed measurement units developed over time. In ancient times, people estimated how fast
+                something moved by observation or using simple tools, which was not very accurate and varied from person
+                to person. As science, trade, and transportation progressed, the need for precise speed measurement
+                became important. Instruments like speedometers, radar guns, and timing devices were developed, and
+                standard units such as meters per second (m/s), kilometers per hour (km/h), and miles per hour (mph)
+                were introduced. These standard units made measuring speed more accurate, reliable, and useful in daily
+                life, science, sports, and travel.</p>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Meter per second (m/s)</h1>
+                    <h3 style="margin-top: 26px;">What is a Meter per second?</h3>
+                    <p class="card-text">The meter per second (symbol: m/s or m·s⁻¹) is the International System of
+                        Units (SI) coherent derived unit of speed and velocity, expressing the distance in meters
+                        traveled per unit time in seconds. As the fundamental velocity unit in science and engineering,
+                        m/s provides seamless integration with other SI units—kinetic energy calculations, Newton's
+                        laws, and momentum equations all use m/s without conversion factors. One meter per second equals
+                        exactly 3.6 kilometers per hour (km/h) or approximately 2.237 miles per hour (mph). The meter
+                        per second is universally used in physics research, engineering specifications, meteorological
+                        measurements, and scientific literature worldwide. Common velocities: walking 1.4 m/s, highway
+                        driving 28 m/s, speed of sound 343 m/s, and Earth's orbital velocity 30,000 m/s around the Sun.
+                        The SI defines the meter itself using the speed of light (299,792,458 m/s), making m/s traceable
+                        to fundamental physical constants.</h4>
+
+                    <h1>History of the Meter per second</h1>
+
+                    <p>The meter per second (m/s) is the standard SI unit for measuring speed or velocity. Its history
+                        is tied to the development of the meter, which was defined in 1791 in France as one
+                        ten-millionth of the distance from the equator to the North Pole along a meridian.
+                        <br>
+                        As scientific measurements became more precise, the need for a consistent unit of speed arose.
+                        Using the meter as the base unit for length and the second as the base unit for time, meters per
+                        second became the standard unit for speed in the International System of Units (SI).
+                        <br>
+                        Today, m/s is widely used in physics, engineering, and science worldwide as a reliable and
+                        universally accepted unit to measure how fast something moves.
+                    </p>
+                    <h3 style="margin-top: 26px;">Why m/s is the "Standard"</h3>
+                    <ul>
+                        <li><b>Force:</b> F = ma → 1 Newton = 1 kg × 1 m/s² (acceleration in m/s²)</li>
+                        <li><b>Momentum:</b> p = mv → 1 kg·m/s (velocity in m/s)</li>
+                        <li><b>Kinetic energy:</b> KE = ½mv² → 1 Joule = 1 kg × (1 m/s)²</li>
+                        <li><b>Power:</b> P = Fv → 1 Watt = 1 N × 1 m/s</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Kilometer per hour (km/h)</h1>
+                    <h3 style="margin-top: 26px;">What is a Kilometer per hour?</h3>
+                    <p class="card-text">Kilometers per hour (km/h or kph) is the world's most widely used unit of
+                        speed, representing the number of kilometers traveled in one hour. Used by over 195 countries
+                        for road speed limits, vehicle speedometers, and weather reports, km/h is the standard speed
+                        measurement for approximately 95% of the global population. One kilometer per hour equals
+                        exactly 0.277778 meters per second, or approximately 0.621371 miles per hour.</p>
+
+
+                    <h1>History of the Kilometer per hour</h1>
+
+                    <p>The kilometer per hour (km/h) is a common unit for measuring speed, especially for vehicles and
+                        transportation. Its history is connected to the development of the metric system in France
+                        during the late 18th century, when the kilometer was defined as 1,000 meters.
+                        <br>
+                        As roads, railways, and vehicles became widespread, people needed a practical unit to express
+                        speed in everyday life. Kilometers per hour became widely used because it combines a convenient
+                        distance unit (kilometer) with time (hour), making it easy to understand speeds for cars,
+                        trains, and other transport.
+                        <br>
+                        Today, km/h is the standard unit for speed in most countries worldwide, except in a few (like
+                        the US and UK), which often use miles per hour (mph).
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- place footer here -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- place footer here -->
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Resources</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> conversion
+                                    Table </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Unit Symbols
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> All
+                                    conversion </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5> Conversion</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="temperature.html"
+                                    class="nav-link p-0 text-body-secondary ">Temperature
+                                    conversion</a></li>
+                            <li class="nav-item mb-2"><a href="length.html"
+                                    class="nav-link p-0 text-body-secondary">Length
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="mass.html" class="nav-link p-0 text-body-secondary">Mass
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="volume.html"
+                                    class="nav-link p-0 text-body-secondary">Volume
+                                    conversion</a></li>
+
+                            <li class="nav-item mb-2"><a href="speed.html" class="nav-link p-0 text-body-secondary">
+                                    Speed
+                                    conversion</a>
+                            <li class="nav-item mb-2"><a href="area.html" class="nav-link p-0 text-body-secondary">Area
+                                    conversion</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Units</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Articles</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>About</h5>
+                            <p> Exact, fast, and transparent unit converters. Built with SI definitions, clear formulas,
+                                and a mobile-first UI..</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<!-- js link  -->
+<script src="temperature.js"></script>
+
+</html>

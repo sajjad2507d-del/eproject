@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Area conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="eproject.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="light">
+            <div class="container-fluid" style="cursor: pointer;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12,7 L12,21"></path>
+                    <path d="M8,21 L16,21"></path>
+                    <path d="M3,7 L21,7"></path>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="12" r="3"></circle>
+                    <line x1="6" y1="7" x2="6" y2="9"></line>
+                    <line x1="18" y1="7" x2="18" y2="9"></line>
+                    <line x1="5" y1="12" x2="7" y2="12"></line>
+                    <line x1="6" y1="11" x2="6" y2="13"></line>
+
+                </svg>
+                <span class="logo-span"> <a href="eprojrct.html"
+                        style="text-decoration: none;color: black;">MetricConversions</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- main heading div  -->
+        <div class="px-4 my-5 text-center ">
+            <h2 class="display-6 fw-bold text-body-emphasis">Area Converter Tools – Land Area Converters & Agricultural
+                Calculators
+            </h2>
+            <p class="lead">Welcome to the Area conversion hub-a complete library of land area converters and
+                agricultural land calculators. Convert between square meters (m²), hectares (ha), acres (ac), square
+                kilometers (km²), square miles (mi²), square feet (ft²), square yards (yd²), and square inches (in²)
+                using exact, standards-based formulas and clear rounding guidance.</p>
+        </div>
+        <!-- calculater  -->
+        <section class="calculater-container ">
+            <div class="control-calculater">
+
+                <input id="a1" type="number" placeholder="Enter temperature">
+                <div id="message"></div>
+
+                <select id="atype">
+                    <option value="sqin-sqmm">Square Inches → Square Millimeters</option>
+                    <option value="sqft-sqm">Square Feet → Square Meters</option>
+                    <option value="sqyd-sqm">Square Yards → Square Meters</option>
+                    <option value="acre-hec">Acres → Hectares</option>
+                    <option value="sqmi-sqkm">Square Miles → Square Kilometers</option>
+                </select>
+
+                <button onclick="convertarea()" class="btn btn-outline-primary">Convert</button>
+
+                <input id="aresult" type="text" placeholder="Result" readonly>
+            </div>
+        </section>
+        <!-- Temperature – History of Measurement Units -->
+        <div class="p-4 p-md-5 mb-4 rounded  cursor-auto  ">
+            <h1 class="  ">Area – History of Measurement Units</h1>
+            <p class="lead  ">Area measurement units developed over time. In ancient times, people estimated the size of
+                land, fields, or surfaces using rough guesses or simple tools, which was not very accurate and varied
+                from person to person. As agriculture, construction, and trade progressed, the need for precise area
+                measurement became important. Tools like measuring ropes, chains, and standard units such as square
+                meters, hectares, and square kilometers were introduced. These standard units made measuring area more
+                accurate, reliable, and useful in farming, construction, mapping, and daily life</p>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Square Meter (m²)</h1>
+                    <h3 style="margin-top: 26px;">What is a Square Meter?</h3>
+                    <p class="card-text">The square meter (symbol: m²) is the International System of Units (SI) derived
+                        unit of area, representing the space enclosed by a square with one-meter sides. Universally
+                        adopted for real estate, construction, manufacturing, science, and engineering worldwide, the
+                        square meter provides precise two-dimensional measurement. One square meter equals exactly
+                        10.7639 square feet, making it essential for property listings, building specifications,
+                        material calculations, and scientific research across all metric-using nations. </p>
+                    <h1>History of the Square Meter</h1>
+
+                    <p class="card-text"> The square meter is derived from the meter, first defined during the French
+                        Revolution (1790s) as
+                        one ten-millionth of the distance from the North Pole to the Equator along the meridian through
+                        Paris. The square meter naturally emerged as the metric system's area unit and became the
+                        official SI derived unit when the International System of Units was established in 1960 by the
+                        11th General Conference on Weights and Measures (CGPM). The meter's definition has been refined
+                        multiple times—most notably in 1983 when it was redefined based on the speed of light
+                        (299,792,458 m/s), making the square meter one of the most precisely defined area units in
+                        existence.
+                    </p>
+                    <h4>Quick Conversions:</h4>
+                    <ul>
+                        <li>1 m² = 10.764 square feet (ft²)</li>
+                        <li>1 m² = 1.196 square yards (yd²)</li>
+                        <li>1 m² ≈ 0.0001 hectares (ha)</li>
+                        <li>1 m² ≈ 0.000247 acres (ac)</li>
+                    </ul>
+                    <h4>Who Uses It?</h4>
+                    <ul>
+                        <li><b>Real estate agents</b> (property listings worldwide except US/UK)</li>
+                        <li><b>Architects and engineers</b> (building specifications)</li>
+                        <li><b>Manufacturers</b> (material calculations)</li>
+                        <li><b>Scientists</b> (universal standard for area measurements)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Square Inch (in²)</h1>
+                    <h3 style="margin-top: 26px;">What is a Square Inch?</h3>
+                    <p class="card-text">The Square Inch (symbol: in² or sq in) is a unit of area in both the British
+                        Imperial and United States customary systems of measurement. It is defined as the area of a
+                        square whose sides each measure exactly one inch in length.</p>
+
+
+                    <h1>History of the Square Inch (in²)</h1>
+
+                    <p class="card-text">The square inch (in²) is a unit of area that comes from the inch, a traditional
+                        unit of length. The inch itself has origins in ancient Rome, where it was based on one-twelfth
+                        of a foot. Over time, the inch was used widely in Europe, especially in England, for trade,
+                        construction, and everyday measurements.
+                        <br>
+                        <br>
+                        The square inch was created by multiplying an inch by itself to measure area, making it useful
+                        for small surfaces like paper, fabric, or building materials. With the spread of the Imperial
+                        system, the square inch became a standard unit for measuring area in countries like the United
+                        States and the United Kingdom.
+                        <br>
+                        <br>
+                        Today, while metric units like square centimeters and square meters are commonly used worldwide,
+                        the square inch remains important in certain industries, crafts, and engineering applications.
+                    </p>
+                    <h4>Common Uses of the Square Inch (in²)</h4>
+                    <ul>
+                        <li><b> Paper & Printing: </b> Measuring page size, margins, or print areas.</li>
+                        <li><b> Fabric & Textiles: </b> Determining small patches or design areas.</li>
+                        <li><b> Construction & Engineering:</b> Calculating areas of small parts, plates, or tiles.</li>
+                        <li><b>Electronics: </b> Measuring the size of screens, circuit boards, or components.</li>
+                        <li><b>Home & Crafts: </b> DIY projects, furniture details, or decorative items.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Square Centimeter (cm²) </h1>
+                    <h3 style="margin-top: 26px;">What is a Square Centimeter?</h3>
+                    <p class="card-text">The square centimeter (cm²) is an SI unit of area equal to a square with sides
+                        of one centimeter. Equals 100 square millimeters or 0.0001 square meters. Commonly used in
+                        medicine, education, electronics, and measuring small surfaces. Approximately 0.155 square
+                        inches.</p>
+
+
+                    <h1>History of the Square Centimeter</h1>
+
+                    <p class="card-text">Derived from the centimeter when the metric system was established in late 18th
+                        century France. As the centimeter became a convenient subunit of the meter, the square
+                        centimeter naturally became the standard for measuring small areas. Widely adopted with SI
+                        formalization in 1960.
+
+                    </p>
+
+
+
+                    <h4>Key relationships:</h4>
+                    <ul>
+                        <li>1 cm² = 1 centimeter × 1 centimeter</li>
+                        <li>1 cm² = 100 square millimeters (mm²) (since 1 cm = 10 mm)</li>
+                        <li>1 cm² = 0.0001 square meters (m²) or 1/10,000 m²</li>
+                        <li>1 cm² ≈ 0.155 square inches (in²)</li>
+                        <li>10,000 cm² = 1 square meter</li>
+                    </ul>
+                    <h4>Common Uses of the Square Centimeter</h4>
+                    <ul>
+                        <li><b>Paper & Stationery: </b> Measuring page size, stickers, or labels.</li>
+                        <li><b>Fabric & Sewing: </b>Determining small patches, patterns, or designs.</li>
+                        <li><b> Science & Education:</b>Calculating surface areas in experiments or school projects.
+                        </li>
+                        <li><b>Electronics & Engineering:</b> Measuring small components, screens, or circuit boards.
+                        </li>
+                        <li><b>Everyday Items:</b> Measuring tiles, small packaging, or decorative pieces.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Square Kilometer (km²) </h1>
+                    <h3 style="margin-top: 26px;">What is a Square Kilometer?</h3>
+                    <p class="card-text">The square kilometer (km²) is a metric unit of area equal to 1,000,000 square
+                        meters or 100 hectares. Used worldwide for measuring countries, cities, large land areas, bodies
+                        of water, and geographical regions. Equals approximately 0.386 square miles or 247 acres.</p>
+
+
+                    <h1>History of the Square Kilometer</h1>
+
+                    <p class="card-text">Derived from the kilometer, a unit introduced as part of the French metric
+                        system in the late 18th century. The square kilometer became the standard international unit for
+                        large geographical areas when nations adopted the metric system. Confirmed as the standard SI
+                        multiple for area when the International System of Units was established in 1960.
+
+                    </p>
+
+
+
+                    <h4>Key relationships:</h4>
+                    <ul>
+                        <li>1 km² = 1 kilometer × 1 kilometer</li>
+                        <li>1 km = 1,000 meters (m)</li>
+                        <li>Therefore, 1 km² = (1,000 m) × (1,000 m) = 1,000,000 square meters (m²)</li>
+                        <li>1 km² = 100 hectares (ha) (since 1 hectare = 10,000 m²)</li>
+
+                    </ul>
+                    <h4>Common Uses of the Square Centimeter</h4>
+                    <ul>
+                        <li><b> Geography & Maps: </b> Measuring countries, cities, forests, and lakes.</li>
+                        <li><b> Urban Planning:</b> Calculating the size of towns, districts, or construction zones.
+                        </li>
+                        <li><b>Agriculture: </b> Estimating farmland, plantations, or grazing areas.
+                        </li>
+                        <li><b> Environmental Studies:</b> Measuring deserts, national parks, or protected areas.
+                        </li>
+                        <li><b>Statistics & Research:</b> Comparing land areas between regions or countries.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- place footer here -->
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Resources</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> conversion
+                                    Table </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Unit Symbols
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> All
+                                    conversion </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5> Conversion</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="temperature.html"
+                                    class="nav-link p-0 text-body-secondary ">Temperature
+                                    conversion</a></li>
+                            <li class="nav-item mb-2"><a href="length.html"
+                                    class="nav-link p-0 text-body-secondary">Length
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="mass.html" class="nav-link p-0 text-body-secondary">Mass
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="volume.html"
+                                    class="nav-link p-0 text-body-secondary">Volume
+                                    conversion</a></li>
+
+                            <li class="nav-item mb-2"><a href="speed.html" class="nav-link p-0 text-body-secondary">
+                                    Speed
+                                    conversion</a>
+                            <li class="nav-item mb-2"><a href="area.html" class="nav-link p-0 text-body-secondary">Area
+                                    conversion</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Units</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Articles</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>About</h5>
+                            <p> Exact, fast, and transparent unit converters. Built with SI definitions, clear formulas,
+                                and a mobile-first UI..</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<!-- js link  -->
+<script src="temperature.js"></script>
+
+</html>

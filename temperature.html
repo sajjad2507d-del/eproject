@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="eproject.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="light">
+            <div class="container-fluid" style="cursor: pointer;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12,7 L12,21"></path>
+                    <path d="M8,21 L16,21"></path>
+                    <path d="M3,7 L21,7"></path>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="12" r="3"></circle>
+                    <line x1="6" y1="7" x2="6" y2="9"></line>
+                    <line x1="18" y1="7" x2="18" y2="9"></line>
+                    <line x1="5" y1="12" x2="7" y2="12"></line>
+                    <line x1="6" y1="11" x2="6" y2="13"></line>
+
+                </svg>
+                <span class="logo-span"> <a href="eprojrct.html"
+                        style="text-decoration: none;color: black;">MetricConversions</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- main heading div  -->
+        <div class="px-4 my-5 text-center ">
+            <h2 class="display-6 fw-bold text-body-emphasis">Temperature Converter Tools – Convert °C, °F, and °F, °C
+            </h2>
+            <p class="lead">Welcome to your all-in-one Temperature Converter — ek simple, fast aur accurate tool jisse
+                aap easily Celsius (°C), Fahrenheit (°F), aur Kelvin (K) ke beech conversion kar sakte ho. Bas apni
+                value enter karo aur turant correct result pao, bina kisi confusion ke. Yeh tool perfect hai chahe aap
+                school, college, lab work, ya daily temperature checks ke liye use kar rahe ho..</p>
+        </div>
+        <!-- calculater  -->
+        <section class="calculater-container ">
+            <div class="control-calculater">
+
+                <input id="t1" type="number" placeholder="Enter temperature">
+                <div id="message"></div>
+
+                <select id="ttype">
+                    <option value="f-c">Fahrenheit → Celsius</option>
+                    <option value="c-f">Celsius → Fahrenheit</option>
+                </select>
+
+                <button onclick="convertTemp()" class="btn btn-outline-primary">Convert</button>
+
+                <input id="tresult" type="text" placeholder="Result" readonly>
+            </div>
+        </section>
+        <!-- Temperature – History of Measurement Units -->
+        <div class="p-4 p-md-5 mb-4 rounded  cursor-auto  ">
+            <h1 class="  ">Temperature – History of Measurement Units</h1>
+            <p class="lead  ">Temperature measurement units developed over time. In ancient times, people estimated heat
+                and cold only by their personal feelings. This method was not accurate, and each person’s judgment was
+                different. With the progress of science, the need for accurate temperature measurement was realized. For
+                this purpose, thermometers were invented and standard units were introduced. Scales like Fahrenheit and
+                Celsius are the result of these efforts. These units made temperature measurement more reliable and
+                easier...</p>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Celsius Scale</h1>
+                    <h3 style="margin-top: 26px;">What Is Celsius?</h3>
+                    <p class="card-text">Degree Celsius (°C) is a unit of temperature on the Celsius scale, a
+                        temperature scale originally named "Centigrade" and renamed to honor Swedish astronomer Anders
+                        Celsius. It is the most common temperature scale used worldwide, adopted by virtually every
+                        country for everyday measurements and scientific work.</p>
+                    <h4>The Celsius scale is defined by two fixed points:</h4>
+                    <ul>
+                        <li>0°C: The freezing point of water at standard atmospheric pressure (1 atmosphere)</li>
+                        <li>100°C: The boiling point of water at standard atmospheric pressure</li>
+                    </ul>
+                    <p>The scale is divided into 100 equal intervals between these two points, making it a decimal-based
+                        (base-10) system that aligns perfectly with the metric system.</p>
+                    <h1>History of the Celsius scale</h1>
+                    <h3 style="margin-top: 26px;">Celsius Scale (1742)</h3>
+                    <p>In 1742, Swedish astronomer Anders Celsius (1701–1744) proposed a temperature scale based on two
+                        fixed points related to water. However, his original scale was inverted from what we use today:
+                    </p>
+                    <h4>Celsius's original scale (1742):</h4>
+                    <ul>
+                        <li>0°: Boiling point of water</li>
+                        <li>100°: Freezing point of water</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Fahrenheit Scale</h1>
+                    <h3 style="margin-top: 26px;">What Is Fahrenheit?</h3>
+                    <p class="card-text">Fahrenheit sets water’s freezing point at 32 °F and boiling at 212 °F (standard
+                        pressure), creating a 180-degree interval between them. Many people find its granularity
+                        intuitive for everyday weather ranges.</p>
+                    <h4>The Fahrenheit scale is defined by two fixed points:</h4>
+                    <ul>
+                        <li>32°F — the freezing point of water.</li>
+                        <li>212°F — the boiling point of water.</li>
+                    </ul>
+
+                    <h1>History of the Fahrenheit scale</h1>
+                    <h3 style="margin-top: 26px;"> Fahrenheit Scale (1724)</h3>
+                    <p>In 1724, Daniel Gabriel Fahrenheit introduced the first reliable scale for measuring temperature.
+                        In this scale, the freezing point of water is set at 32°F and the boiling point at 212°F. This
+                        scale is mostly used in the United States.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!--  footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- place footer here -->
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Resources</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> conversion
+                                    Table </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Unit Symbols
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> All
+                                    conversion </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5> Conversion</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="temperature.html"
+                                    class="nav-link p-0 text-body-secondary ">Temperature
+                                    conversion</a></li>
+                            <li class="nav-item mb-2"><a href="length.html"
+                                    class="nav-link p-0 text-body-secondary">Length
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="mass.html" class="nav-link p-0 text-body-secondary">Mass
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="volume.html"
+                                    class="nav-link p-0 text-body-secondary">Volume
+                                    conversion</a></li>
+
+                            <li class="nav-item mb-2"><a href="speed.html" class="nav-link p-0 text-body-secondary">
+                                    Speed
+                                    conversion</a>
+                            <li class="nav-item mb-2"><a href="area.html" class="nav-link p-0 text-body-secondary">Area
+                                    conversion</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Units</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Articles</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>About</h5>
+                            <p> Exact, fast, and transparent unit converters. Built with SI definitions, clear formulas,
+                                and a mobile-first UI..</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<script src="temperature.js"></script>
+
+</html>

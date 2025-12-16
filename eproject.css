@@ -1,0 +1,208 @@
+ .navbar {
+     box-shadow: 0px -1px 18px -10px black
+ }
+
+
+
+ .logo {
+     height: 40px;
+     width: 40px;
+ }
+
+ .logo-span {
+     font-size: 25px;
+     align-items: center;
+     font-weight: 700;
+     padding-left: 12px;
+ }
+
+
+
+ .navbar-nav {
+     padding-left: 21px;
+ }
+
+ .fw-light {
+     font-weight: 900;
+ }
+
+ .heading-span {
+     font-weight: 600;
+
+ }
+
+ .nav-item a:hover {
+     color: blue;
+     text-decoration: underline;
+ }
+
+
+
+
+ .converter-card {
+     border-radius: 15px;
+     padding: 25px;
+     transition: 0.3s;
+     background: white;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ }
+
+ .converter-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+ }
+
+ .icon {
+     font-size: 25px;
+     margin-right: 8px;
+ }
+
+ .title {
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ /* <!-- comman Conversion  */
+
+
+ .conv-card {
+     border: 1px solid #e5e5e5;
+     border-radius: 12px;
+     padding: 20px;
+     background: #fff;
+     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+     transition: 0.2s;
+ }
+
+ .conv-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+
+ }
+
+ .conv-title {
+     font-weight: 700;
+     font-size: 18px;
+ }
+
+ .conv-sub {
+     color: #272757;
+     font-size: 14px;
+ }
+
+
+
+ /* Conversion tables and Unit symbols library   */
+ .info-card {
+     border: 1px solid #e5e5e5;
+     border-radius: 12px;
+     padding: 25px;
+     background: #fff;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+     transition: 0.3s ease;
+ }
+
+ .info-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+ }
+
+ .icon-box {
+     font-size: 45px;
+     margin-right: 18px;
+ }
+
+ .card-title {
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ .card-text {
+     color: #555;
+     font-size: 15px;
+     margin-top: 5px;
+     margin-bottom: 15px;
+ }
+
+ .card-link {
+     text-decoration: none;
+     font-weight: 500;
+ }
+
+ .container {
+     margin: 40px;
+
+ }
+
+ /* comprehencive unit converstion tolls 
+         */
+ .my-box {
+     border: 1px solid #e5e5e5;
+     padding: 20px;
+     text-align: center;
+     border-radius: 10px;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+     transition: 0.3s;
+  
+ }
+
+ 
+    /*   css  for temperature */
+ .calculater-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .control-calculater {
+     width: 70%;
+     background: white;
+     padding: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     box-shadow: 0 0 10px #aaa;
+
+ }
+
+
+
+
+ 
+ 
+ input,
+ select,
+ button {
+     width: 100%;
+     padding: 12px;
+        margin-top: 15px!important;
+     border-radius: 5px;
+     border: 1px solid #aaa;
+ }
+
+
+
+  .leng-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .leng-control {
+     width: 70%;
+     background: white;
+     padding: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     box-shadow: 0 0 10px #aaa;
+
+ }
+
+ 

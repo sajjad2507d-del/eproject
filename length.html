@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Length conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- css link -->
+    <link rel="stylesheet" href="eproject.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="light">
+            <div class="container-fluid" style="cursor: pointer;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12,7 L12,21"></path>
+                    <path d="M8,21 L16,21"></path>
+                    <path d="M3,7 L21,7"></path>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="12" r="3"></circle>
+                    <line x1="6" y1="7" x2="6" y2="9"></line>
+                    <line x1="18" y1="7" x2="18" y2="9"></line>
+                    <line x1="5" y1="12" x2="7" y2="12"></line>
+                    <line x1="6" y1="11" x2="6" y2="13"></line>
+
+                </svg>
+                <span class="logo-span"> <a href="eprojrct.html"
+                        style="text-decoration: none;color: black;">MetricConversions</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="px-4 my-5 text-center ">
+            <h2 class="display-6 fw-bold text-body-emphasis">Length Converter Tools – Convert inches, feet,
+                yards, miles. </h2>
+            <p class="lead">Welcome to the length conversion hub-your one place to convert between centimeters,
+                millimeters, meters, inches, feet, yards, miles, and kilometers. Every calculator uses exact constants,
+                instant math, and a consistent, mobile-first interface...</p>
+        </div>
+        <section class="calculater-container ">
+            <div class="control-calculater">
+                <input id="l1" type="number" placeholder="Enter length">
+                <div id="message"></div>
+                <select id="ltype">
+                    <option value="in-mm">Inches → Millimeters</option>
+                    <option value="ft-m">Feet → Meters</option>
+                    <option value="yd-m">Yards → Meters</option>
+                    <option value="mi-km">Miles → Kilometers</option>
+                </select>
+                <button onclick="convertLength()" class="btn btn-outline-primary">Convert</button>
+
+                <input id="lresult" type="text" placeholder="Result" readonly>
+            </div>
+
+
+        </section>
+        <div class="p-4 p-md-5 mb-4 rounded    ">
+            <h1 class="  ">Length – History of Measurement Units</h1>
+            <p class="lead  ">Length measurement units developed over time. In ancient times, people estimated distance
+                and length only using their hands, steps, or fingers. This method was not accurate, and each person’s
+                judgment was different. With the progress of science, the need for standard units for measuring length
+                was realized. For this purpose, units like meters, feet, inches, and kilometers were introduced. These
+                units made length measurement more accurate, reliable, and universal..</p>
+
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Inch</h1>
+                    <h3 style="margin-top: 26px;">What is a Inch?</h3>
+                    <p class="card-text">The inch (in) is a unit of length in the imperial and United States customary
+                        systems, defined as exactly 2.54 centimeters. It remains the standard measurement for everyday
+                        distances in American life, from TV screens to rainfall....</p>
+                    <h3>History of the Inch</h3>
+                    <p>The inch has ancient origins dating back to the Roman uncia (one-twelfth). Throughout medieval
+                        England, it was defined variously as three barleycorns laid end-to-end or the width of a thumb.
+                        King Edward II standardized it in 1324 as the length of three barleycorns. The modern definition
+                        was established in 1959 through international agreement: 1 inch equals exactly 2.54 centimeters,
+                        creating perfect alignment between imperial and metric systems.
+                    </p>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Millimeter (mm)</h1>
+                    <h3 style="margin-top: 26px;">What is a Millimeter?</h3>
+                    <p class="card-text">The millimeter (mm) is a metric unit of length equal to one-thousandth of a
+                        meter or one-tenth of a centimeter. Used worldwide for precision measurements in engineering,
+                        manufacturing, jewelry, and everyday measurements. Approximately 0.0394 inches or about the
+                        thickness of a credit card.</p>
+                    <h5>Key relationships:</h5>
+                    <ul>
+                        <li>1 millimeter = 0.001 meters (m)</li>
+                        <li>1 millimeter = 0.1 centimeters (cm)</li>
+                        <li>10 millimeters = 1 centimeter</li>
+                        <li>1,000 millimeters = 1 meter</li>
+                        <li>1 millimeter ≈ 0.03937 inches (about 1/25th inch)</li>
+                        <li>25.4 millimeters = 1 inch (exactly)</li>
+                    </ul>
+
+
+
+                    <h3>History of the Millimeter</h3>
+                    <p>Defined as a subunit of the meter when the metric system was established in late 18th century
+                        France. The millimeter provides a standard unit for fine measurements required in science,
+                        engineering, and manufacturing. Became essential with industrial precision machining in the 19th
+                        century.
+                    </p>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Foot (ft)</h1>
+                    <h3 style="margin-top: 26px;">What is a Foot?</h3>
+                    <p class="card-text">The foot (ft) is a unit of length in the imperial and United States customary
+                        systems, defined as exactly 12 inches or 0.3048 meters. It serves as the fundamental human-scale
+                        measurement in American life, from describing height and room dimensions to aviation altitudes
+                        worldwide.</p>
+                    <h3>History of the Foot</h3>
+                    <p>The foot has ancient origins based on the length of the human foot, with variations across
+                        civilizations. The Roman pes measured 11.65 inches, while medieval English feet ranged from 12
+                        to 13 inches. In 1959, the international yard and pound agreement standardized the foot at
+                        exactly 0.3048 meters (12 inches), ending centuries of regional variations and creating precise
+                        alignment with the metric system.
+                    </p>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Meter (m) </h1>
+                    <h3 style="margin-top: 26px;">What is a Meter?</h3>
+                    <p class="card-text">The meter (m) is the SI base unit of length, defined by the distance light
+                        travels in vacuum in 1/299,792,458 of a second. Used globally for measuring distance, height,
+                        and dimensions. Equals 100 centimeters, 3.28 feet, or about 39.4 inches.</p>
+                    <h5>Key relationships:</h5>
+                    <ul>
+                        <li>1 meter = 100 centimeters (cm)</li>
+                        <li>1 meter = 1,000 millimeters (mm)</li>
+                        <li>1 meter = 0.001 kilometers (km)</li>
+                        <li>1,000 meters = 1 kilometer</li>
+
+                    </ul>
+
+                    <h3>History of the Meter</h3>
+                    <p>Originally defined in 1793 as one ten-millionth of the distance from equator to North Pole.
+                        Redefined multiple times for precision, culminating in the current 1983 definition based on the
+                        speed of light, a fundamental constant. Forms the foundation of the metric system used by 95% of
+                        the world.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Mile (mi)</h1>
+                    <h3 style="margin-top: 26px;">What is a Mile?</h3>
+                    <p class="card-text">The mile (mi) is a unit of length in the British imperial and United States
+                        customary measurement systems, defined as exactly 5,280 feet, 1,760 yards, or 1.609344
+                        kilometers. The mile serves as the standard unit for measuring road distances, speed limits
+                        (mph), vehicle odometers, real estate proximity, running races (the four-minute mile), and
+                        geographic distances in the United States, United Kingdom (roads only), and Myanmar. Unlike the
+                        metric kilometer (1,000 meters, base-10), the mile</p>
+                    <h3>History of the Mile</h3>
+                    <p>One mile equals 5,280 feet or approximately 1.609 kilometers. The mile is the primary distance
+                        measurement used on road signs, speed limits, and odometers throughout the United States. If you
+                        drive at 60 mph (miles per hour), you travel one mile every minute. The mile is also the
+                        standard unit for measuring real estate proximity ("3 miles from downtown"), running races (the
+                        famous "four-minute mile"), and geographic distances in the US and UK.
+                    </p>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Kilometer (km)</h1>
+                    <h3 style="margin-top: 26px;">What is a Kilometer?</h3>
+                    <p class="card-text">The kilometer (km) is a unit of length in the metric system, equal to exactly
+                        1,000 meters or 0.621371 miles. It serves as the standard distance measurement for road travel,
+                        geographic distances, and transportation worldwide, from highway signs to marathon races.</p>
+                    <h3>History of the Kilometer</h3>
+                    <p>The kilometer was established with the metric system during the French Revolution in the 1790s,
+                        derived directly from the meter as a convenient larger unit for measuring long distances. The
+                        prefix "kilo-" (from Greek khilioi, meaning thousand) combined with "meter" created a
+                        decimal-based distance unit that rapidly spread globally. By the mid-20th century, nearly every
+                        country except the United States adopted kilometers for road distances, making it the world
+                        standard for geographic measurement.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+    <!-- place footer here -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- place footer here -->
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Resources</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> conversion
+                                    Table </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Unit Symbols
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> All
+                                    conversion </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5> Conversion</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="temperature.html"
+                                    class="nav-link p-0 text-body-secondary ">Temperature
+                                    conversion</a></li>
+                            <li class="nav-item mb-2"><a href="length.html"
+                                    class="nav-link p-0 text-body-secondary">Length
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="mass.html" class="nav-link p-0 text-body-secondary">Mass
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="volume.html"
+                                    class="nav-link p-0 text-body-secondary">Volume
+                                    conversion</a></li>
+
+                            <li class="nav-item mb-2"><a href="speed.html" class="nav-link p-0 text-body-secondary">
+                                    Speed
+                                    conversion</a>
+                            <li class="nav-item mb-2"><a href="area.html" class="nav-link p-0 text-body-secondary">Area
+                                    conversion</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Units</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Articles</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>About</h5>
+                            <p> Exact, fast, and transparent unit converters. Built with SI definitions, clear formulas,
+                                and a mobile-first UI..</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<script src="temperature.js"></script>
+
+</html>

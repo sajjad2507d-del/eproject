@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Volume conversion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="eproject.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- place navbar here -->
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg " data-bs-theme="light">
+            <div class="container-fluid" style="cursor: pointer;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12,7 L12,21"></path>
+                    <path d="M8,21 L16,21"></path>
+                    <path d="M3,7 L21,7"></path>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="12" r="3"></circle>
+                    <line x1="6" y1="7" x2="6" y2="9"></line>
+                    <line x1="18" y1="7" x2="18" y2="9"></line>
+                    <line x1="5" y1="12" x2="7" y2="12"></line>
+                    <line x1="6" y1="11" x2="6" y2="13"></line>
+
+                </svg>
+                <span class="logo-span" > <a href="eprojrct.html"  style="text-decoration: none;color: black;">MetricConversions</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto" style="padding-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Unites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> FAQs</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- main heading div  -->
+        <div class="px-4 my-5 text-center ">
+            <h2 class="display-6 fw-bold text-body-emphasis">Volume Converter Tools – Convert mL, L, cups (US/metric),
+                fl oz (US/UK), pints & gallons
+            </h2>
+            <p class="lead">Welcome to the volume conversion hub-your one place to convert between milliliters, liters,
+                cups (US & metric), fluid ounces (US & UK imperial), pints, gallons, tablespoons, and teaspoons. Every
+                calculator uses exact, internationally recognized definitions and a consistent, mobile-first interface.
+            </p>
+        </div>
+        <!-- calculater  -->
+        <section class="calculater-container ">
+            <div class="control-calculater">
+
+                <input id="v1" type="number" placeholder="Enter temperature">
+                <div id="message"></div>
+
+                <select id="vtype">
+                    <option value="oz-ml">Fluid Ounces → Milliliters</option>
+                    <option value="gal-l">Gallons → Liters</option>
+                    <option value="cuft-cum">Cubic Feet → Cubic Meters</option>
+                    <option value="cuyd-cum">Cubic Yards → Cubic Meters</option>
+                </select>
+
+                <button onclick="convertVolume()" class="btn btn-outline-primary">Convert</button>
+
+                <input id="vresult" type="text" placeholder="Result" readonly>
+            </div>
+        </section>
+        <!-- Temperature – History of Measurement Units -->
+        <div class="p-4 p-md-5 mb-4 rounded  cursor-auto  ">
+            <h1 class="  "> Volme – History of Measurement Units</h1>
+            <p class="lead  ">Units for measuring volume have developed over time. In ancient times, people estimated
+                the volume of liquids and solids using rough guesses or by filling containers, which varied from person
+                to person and was not very accurate. With the progress of science and trade, the need for precise volume
+                measurement became important. For this purpose, various measuring tools like cups, flasks, and cylinders
+                were developed, and standard units such as liter and milliliter were introduced. These standard units
+                make it easy and reliable to measure volume accurately, whether for cooking, science experiments, or
+                daily tasks.</p>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Fluid ounce (fl oz)</h1>
+                    <h3 style="margin-top: 26px;">What is a Fluid ounce?</h3>
+                    <p class="card-text">The US fluid ounce (fl oz) is a unit of volume equal to 1/128 of a US gallon or
+                        approximately 29.57 milliliters. The fluid ounce is the standard liquid measurement in American
+                        recipes (8 fl oz cup, 16 fl oz pint), beverage serving sizes (12 fl oz soda can, 16 fl oz
+                        coffee), and product labeling. A shot glass holds 1.5 fl oz, a standard water bottle is 16.9 fl
+                        oz (500 mL), and a wine glass serving is 5 fl oz. Important: The fluid ounce measures volume
+                        (space occupied), not weight—it's completely different from the weight ounce (oz).</p>
+
+
+                    <h1>History of the Fluid Ounce</h1>
+
+                    <p class="card-text">The fluid ounce was created to measure liquids for trade, medicine, and
+                        cooking. It comes from
+                        the idea of the “ounce” used for weight, but for liquids. Britain and the US developed slightly
+                        different sizes: the UK fluid ounce is a bit smaller than the US fluid ounce. Today, it is still
+                        used in recipes, drinks, and liquid products, though liters and milliliters are more common
+                        worldwide.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Milliliter (mL) </h1>
+                    <h3 style="margin-top: 26px;">What is a Milliliter?</h3>
+                    <p class="card-text">The milliliter (mL) is a metric unit of volume equal to one-thousandth of a
+                        liter (1/1000 L or 0.001 L). The milliliter is the universal standard for measuring liquid
+                        volumes in medicine, cooking, beverages, and scientific applications worldwide. One milliliter
+                        is exactly equivalent to one cubic centimeter (1 cm³ or 1 cc), creating an elegant connection
+                        between volume and spatial dimensions in the metric system. A teaspoon holds approximately 5 mL,
+                        a tablespoon holds 15 mL, and a standard shot glass contains 44 mL. The milliliter provides
+                        convenient whole-number measurements for everyday liquid volumes without requiring decimals..
+                    </p>
+                    <h3 style="margin-top: 26px;">Mathematical Relationships</h3>
+                    <ul>
+                        <li>0.001 liters (L)</li>
+                        <li>1 cubic centimeter (cm³ or cc) exactly</li>
+                        <li>0.000001 cubic meters (m³)</li>
+                        <li>0.033814 US fluid ounces (fl oz)</li>
+                        <li>0.035195 UK fluid ounces (imperial)</li>
+                        <li>0.202884 teaspoons (tsp)</li>
+                        <li>0.067628 tablespoons (tbsp)</li>
+                    </ul>
+
+                    <h1>History of the Milliliter</h1>
+
+                    <p class="card-text">The milliliter derives from the liter, which was established in France in 1795
+                        as part of the
+                        revolutionary metric system. The name "liter" comes from the obsolete French unit "litron," a
+                        measure of capacity. Originally, one liter was defined as the volume of one kilogram of pure
+                        water at maximum density (4°C), creating a fundamental link between mass and volume. The prefix
+                        "milli-" from Latin "mille" (thousand) means one-thousandth, making the milliliter 1/1000 of a
+                        liter. The critical equivalence 1 mL = 1 cm³ = 1 gram of water established the metric system as
+                        beautifully interconnected. In 1964, the International Committee for Weights and Measures
+                        redefined the liter as exactly one cubic decimeter (1 dm³), maintaining the milliliter as 1 cm³.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Gallon (UK) (gal)</h1>
+                    <h3 style="margin-top: 26px;">What is a Gallon (UK)?</h3>
+                    <p class="card-text">Definition, origin, usage, and conversion formulas for the UK gallon.</p>
+                    <h3 style="margin-top: 26px;">What is a Gallon (UK)?</h3>
+                    <p class="card-text">
+                        The UK gallon (Imperial gallon) is a unit of volume defined as 4.54609 litres.
+
+                    </p>
+
+                    <h1>History of the Gallon (UK)</h1>
+
+                    <p>The Imperial gallon was defined based on the volume of 10 pounds of distilled water weighed in
+                        air with brass weights with the barometer standing at 30 inches of mercury and at a temperature
+                        of 62 °F.
+                    </p>
+                    <h3 style="margin-top: 26px;">Common Uses</h3>
+                    <ul>
+                        <li> <b>Fuel Measurement:</b> Used for measuring fuel (petrol, diesel) in the UK and some
+                            Commonwealth countries.</li>
+                        <li> <b>Beverages:</b> Selling milk and other beverages in large containers in the UK.</li>
+                        <li> <b>Household Liquids:</b> Measuring paint and other household liquids.</li>
+                        <li> <b>Pools & Water:</b> Pool capacity and water usage measurements in the UK.</li>
+                        <li> <b>Industry:</b> Some industrial applications in countries using the Imperial system.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card w-100 mb-3">
+                <div class="card-body">
+                    <h1>Liter (L)</h1>
+                    <h3 style="margin-top: 26px;">What is a Liter?</h3>
+                    <p class="card-text">The liter (L) is a metric unit of volume equal to 1 cubic decimeter or 1,000
+                        cubic centimeters. Used globally for measuring liquids like beverages, fuel, and cooking
+                        ingredients. Equals 0.264 US gallons or about 33.8 fluid ounces. Standard for bottles,
+                        containers, and recipes worldwide.</p>
+
+
+                    <h1>History of the Liter</h1>
+
+                    <p class="card-text">Introduced in France in 1795 as part of the metric system, defined as one cubic
+                        decimeter. Symbol changed from lowercase "l" to uppercase "L" in 1979 to avoid confusion with
+                        the number 1. While not a base SI unit (cubic meter is), the liter is accepted for use with SI
+                        and widely used globally for liquids.
+                    </p>
+                        <h3 style="margin-top: 26px;">Key relationships:</h3>
+                    <ul>
+                        <li>1 liter = 1,000 milliliters (mL)</li>
+                        <li> 1 liter = 100 centiliters (cL)</li>
+                        <li>1 liter = 10 deciliters (dL)</li>
+                        <li>1,000 liters = 1 cubic meter (m³)</li>
+                        <li>1 liter = 1 cubic decimeter (dm³)</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+ 
+        <!-- place footer here -->
+    <!--  footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- place footer here -->
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Resources</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> conversion
+                                    Table </a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Unit Symbols
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> All
+                                    conversion </a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5> Conversion</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="temperature.html" class="nav-link p-0 text-body-secondary ">Temperature
+                                    conversion</a></li>
+                            <li class="nav-item mb-2"><a href="length.html" class="nav-link p-0 text-body-secondary">Length
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="mass.html" class="nav-link p-0 text-body-secondary">Mass
+                                    conversion</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="volume.html" class="nav-link p-0 text-body-secondary">Volume
+                                    conversion</a></li>
+
+                            <li class="nav-item mb-2"><a href="speed.html" class="nav-link p-0 text-body-secondary"> Speed
+                                    conversion</a>
+                            <li class="nav-item mb-2"><a href="area.html" class="nav-link p-0 text-body-secondary">Area
+                                    conversion</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Units</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Articles</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>About</h5>
+                            <p> Exact, fast, and transparent unit converters. Built with SI definitions, clear formulas,
+                                and a mobile-first UI..</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+<!-- javascripe link -->
+<script src="temperature.js"></script>
+
+</html>
